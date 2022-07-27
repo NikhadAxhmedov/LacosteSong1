@@ -33,8 +33,8 @@ def start(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/LacosteProject'),
-                    InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/LTMusiqi')
+                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Axhmedovs'),
+                    InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/PlaylistOfAxhmedov')
                   ],[
                     InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/Axhmedov')
                 ]
@@ -52,8 +52,8 @@ def help(client, message):
         quote=False,
         reply_markup=InlineKeyboardMarkup(
             [[
-                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/LacosteProject'),
-                    InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/LTMusiqi')
+                    InlineKeyboardButton('Rəsmi Kanal ✅', url='https://t.me/Axhmedovs'),
+                    InlineKeyboardButton('Playlist 🎵', url=f'https://t.me/PlaylistOfAxhmedov')
                   ],[
                     InlineKeyboardButton('Sahib 👨🏻‍💻', url=f'T.me/Axhmedov')
                 ]
@@ -116,7 +116,7 @@ def a(client, message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@LocasteProject")
+        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, thumb=thumb_name, performer="@Axhmedovs")
         m.delete()
         bot.send_audio(chat_id=Config.PLAYLIST_ID, audio=audio_file, caption=rep, performer="@LacosteProject", parse_mode='md', title=title, duration=dur, thumb=thumb_name)
     except Exception as e:
